@@ -1,0 +1,87 @@
+/* Empty. Add your own CSS if you like */
+.bar.bar-stable {
+  background-color: purple;
+}
+
+.button-positive {
+  background-color: purple !important;
+  color: white;
+}
+
+h1 {
+  color: white;
+
+}
+
+.bar-footer {
+  margin-bottom: 15px;
+}
+
+.welcome {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 20%;
+}
+
+.slider {
+  height: 100%;
+}
+
+.slider-slide {
+  padding-top: 80px;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+#logo {
+  margin: 30px 0px;
+}
+
+#list {
+  width: 170px;
+  margin: 30px auto;
+  font-size: 20px;
+}
+
+#list ol {
+  margin-top: 30px;
+}
+
+#list ol li {
+  text-align: left;
+  list-style: decimal;
+  margin: 10px 0px;
+}
+
+.button.ng-hide {
+  display: none;
+}
+
+.item-avatar {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  text-align: center;
+}
+
+.item-avatar > img:first-child {
+  max-width: 200px !important;
+  max-height: 200px !important;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 1%;
+}
+
+.ion-navicon {
+  color: white !important;
+}

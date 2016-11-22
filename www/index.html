@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="js/ng-cordova.js"></script>
+    <script src="js/ng-cordova-oauth.min.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sprintf/1.0.3/sprintf.min.js"> </script>
+
+    <!-- your app's js -->
+    <script src="app/app.module.js"></script>
+    <script src="app/app.routes.js"></script>
+    <script src="app/sessions/session.routes.js"></script>
+    <script src="app/sessions/session-create.controller.js"></script>
+    <script src="app/sessions/session-detail.controller.js"></script>
+
+    <!--<script type="text/javascript">-->
+    <!--angular.module('starter', ['ionic','ngCordova','ngCordovaOauth'])-->
+    <!--.controller('LoginwithFacebook',function($scope,$cordovaOauth, $http){-->
+      <!--$scope.LoginwithFacebook = function(){-->
+        <!--console.log("clicked");-->
+        <!--$cordovaOauth.facebook("684059831775645", ["email"]).then(function(result) {-->
+          <!--console.log(JSON.stringify(result));-->
+                <!--alert("Auth Success..!!"+result);-->
+          <!--$http.get("https://graph.facebook.com/v2.2/me", {params: {access_token: result.access_token, fields: "name,gender,location,picture", format: "json" }}).then(function(res) {-->
+            <!--console.log(res);-->
+            <!--$scope.name = res.data.name;-->
+            <!--$scope.picture = res.data.picture.data.url;-->
+          <!--}, function(error) {-->
+            <!--alert("Error: " + error);-->
+          <!--});-->
+            <!--}, function(error) {-->
+                <!--alert("Auth Failed..!!"+error);-->
+            <!--});-->
+      <!--};-->
+    <!--});-->
+    <!--</script>-->
+  </head>
+  <body ng-app="starter">
+    <!--<ion-content class="padding">-->
+      <!--{{ name }}-->
+      <!--<img ng-src="{{ picture }}" />-->
+      <!--<button class="button button-positive button-block" ng-click="LoginwithFacebook()">Login with Facebook</button>-->
+    <!--</ion-content>-->
+    <ion-nav-view></ion-nav-view>
+  </body>
+</html>
